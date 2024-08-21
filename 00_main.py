@@ -1,4 +1,3 @@
-import csv
 import time
 from rich import print  # type: ignore
 from rich.table import Table  # type: ignore
@@ -24,8 +23,9 @@ def game_title():
 
 # Function to validate that the input option was valid
 def select_validation(select):
+    time.sleep(1.5)
     while (select != "1" and select != "2" and select != "3"):
-        select = input("\nI don't understand that. Please select a valid option.\n\n[1: Log in]\n[2: Register]\n[3: Exit game]\n:")
+        select = input("\nI don't understand that. Please select a valid option.\n\n[1: Log in]\t[2: Register]\t[3: Exit game\n\t\t[?]: ")
     return select
 
 # Function to finish the loop and close the game.
@@ -36,7 +36,7 @@ def exit_game(select):
         return exit()
 
 def game_menu():
-    select = input("[1: Log in]\n[2: Register]\n[3: Exit game]\n:")
+    select = input("[1: Log in]\t[2: Register]\t[3: Exit game\n\t\t[?]: ")
     if(select != "1" and select != "2" and select != "3"):
         select = select_validation(select)
 
