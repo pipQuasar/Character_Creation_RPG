@@ -66,10 +66,11 @@ def Login():
     time.sleep(2) 
     return logged
 
+import create_new_character
 def Characters_galery():
     print("\n[bold red]" + "CHARACTERS" + "[/bold red]")
-    print("este es un guerrero")
-
+    select = input("[1: Create new character]\t[2: View characters]\t[3: Exit to menu]\n\n\t\t[?]:")
+    
 
 
 
