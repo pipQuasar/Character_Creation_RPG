@@ -34,7 +34,7 @@ def Menu():
             if (Login() == True):
                 print("logged!")
                 while(True):
-                    Galery()
+                    Characters_galery()
                     break
                     # Acá estaria el codigo del juego, porque seria otro bucle hasta que decida volver al menu
             else:
@@ -66,7 +66,7 @@ def Login():
     time.sleep(2) 
     return logged
 
-def Galery():
+def Characters_galery():
     print("\n[bold red]" + "CHARACTERS" + "[/bold red]")
     print("este es un guerrero")
 
