@@ -34,6 +34,7 @@ def Menu():
             if (Login() == True):
                 print("logged!")
                 while(True):
+                    time.sleep(2)
                     Characters_galery()
                     break
                     # Acá estaria el codigo del juego, porque seria otro bucle hasta que decida volver al menu
@@ -63,13 +64,19 @@ def Login():
             return logged
         username, password = input("\nERROR! username or password wrong.\n\n[Enter your username ->]: "), input("[Enter your password ->]: ")
     print("logging in...") 
-    time.sleep(2) 
+    time.sleep(1.2) 
     return logged
 
 import create_new_character
 def Characters_galery():
-    print("\n[bold red]" + "CHARACTERS" + "[/bold red]")
-    select = input("[1: Create new character]\t[2: View characters]\t[3: Exit to menu]\n\n\t\t[?]:")
+    print("\n[bold red]" + "LOBBY" + "[/bold red]")
+    select = input("[1: Create new character]\t[2: View characters]\t[3: Exit]\n\n\t\t[?]:")
+    
+    
+    if select == "3":
+        print("\nBack to menu...")
+        time.sleep(1.2)
+        pass
     
 
 
@@ -86,7 +93,7 @@ def Characters_galery():
 # Function to finish the loop and close the game.
 def Exit_game():
     print("Shutting down...")
-    time.sleep(1)
+    time.sleep(1.2)
     return exit()    
 
 
