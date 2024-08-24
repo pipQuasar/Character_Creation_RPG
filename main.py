@@ -71,6 +71,7 @@ import create_new_character
 def Characters_galery():
     print("\n[bold red]" + "LOBBY" + "[/bold red]")
     select = input("[1: Create new character]\t[2: View characters]\t[3: Exit]\n\n\t\t[?]:")
+    i
     
     
     if select == "3":
